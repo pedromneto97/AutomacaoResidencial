@@ -6,6 +6,9 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './home/home.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {faHome} from '@fortawesome/free-solid-svg-icons';
 
 const appRoutes: Routes = [
   {
@@ -24,10 +27,14 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  constructor() {
+    library.add(faHome);
+  }
 }
