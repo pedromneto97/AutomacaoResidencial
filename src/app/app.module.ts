@@ -8,7 +8,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faHome} from '@fortawesome/free-solid-svg-icons';
+import {faBed, faCookieBite, faHome} from '@fortawesome/free-solid-svg-icons';
 
 const appRoutes: Routes = [
   {
@@ -35,6 +35,6 @@ const appRoutes: Routes = [
 })
 export class AppModule {
   constructor() {
-    library.add(faHome);
+    library.add(faHome, faBed, faCookieBite);
   }
 }
