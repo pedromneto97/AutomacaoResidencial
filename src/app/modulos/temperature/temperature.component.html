@@ -1,0 +1,18 @@
+<div id="temperature" class="card text-center" style="max-width: 18rem;">
+  <div class="card-body">
+    <fa-icon [icon]="temp_icon" size="4x"></fa-icon>
+    <h4>
+      {{temperature.temperature}}{{temperature.type.abr}}
+    </h4>
+  </div>
+  <div class="card-body">
+    <div class="form-row">
+      <div class="col-md-6 offset-md-3">
+        <select id="temperaturetype" name="temperaturetype" class="form-control form-control-sm"
+                (change)="tempFilter($event.target.value)">
+          <option *ngFor="let type of types" value="{{type.name}}">{{type.name}} - {{type.abr}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
