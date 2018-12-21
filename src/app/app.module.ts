@@ -8,12 +8,18 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
-import {faBed, faCookieBite, faHome} from '@fortawesome/free-solid-svg-icons';
+import {faBed, faCookieBite, faHome, faTemperatureHigh, faTemperatureLow, faThermometerEmpty} from '@fortawesome/free-solid-svg-icons';
+import {BedroomComponent} from './bedroom/bedroom.component';
+import {TemperatureComponent} from './modulos/temperature/temperature.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path: 'bedroom',
+    component: BedroomComponent
   },
   {path: '**', redirectTo: ''}
 ];
@@ -23,7 +29,9 @@ const appRoutes: Routes = [
     AppComponent,
     DashboardComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    BedroomComponent,
+    TemperatureComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +43,6 @@ const appRoutes: Routes = [
 })
 export class AppModule {
   constructor() {
-    library.add(faHome, faBed, faCookieBite);
+    library.add(faHome, faBed, faCookieBite, faTemperatureLow, faTemperatureHigh, faThermometerEmpty);
   }
 }
