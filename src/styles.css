@@ -16,3 +16,8 @@ body {
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
+
+.card {
+  max-width: 18rem;
+  height: 14rem;
+}
