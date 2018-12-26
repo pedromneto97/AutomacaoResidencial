@@ -15,6 +15,7 @@ import {LuminosidadeComponent} from './modulos/luminosidade/luminosidade.compone
 import {far} from '@fortawesome/free-regular-svg-icons';
 import {HumidityComponent} from './modulos/humidity/humidity.component';
 import {PresencaComponent} from './modulos/presenca/presenca.component';
+import {DoorComponent} from './modulos/door/door.component';
 
 const appRoutes: Routes = [
   {
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     TemperatureComponent,
     LuminosidadeComponent,
     HumidityComponent,
-    PresencaComponent
+    PresencaComponent,
+    DoorComponent
   ],
   imports: [
     BrowserModule,
