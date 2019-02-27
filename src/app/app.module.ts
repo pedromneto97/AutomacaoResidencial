@@ -16,6 +16,7 @@ import {far} from '@fortawesome/free-regular-svg-icons';
 import {HumidityComponent} from './modulos/humidity/humidity.component';
 import {PresencaComponent} from './modulos/presenca/presenca.component';
 import {DoorComponent} from './modulos/door/door.component';
+import {CrossbarService} from './services/crossbar.service';
 
 const appRoutes: Routes = [
   {
@@ -40,14 +41,14 @@ const appRoutes: Routes = [
     LuminosidadeComponent,
     HumidityComponent,
     PresencaComponent,
-    DoorComponent
+    DoorComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
-  providers: [],
+  providers: [CrossbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
