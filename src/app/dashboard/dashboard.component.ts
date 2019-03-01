@@ -18,17 +18,17 @@ export class DashboardComponent implements OnInit {
 
   constructor() {
     let presence, luminosity, humidity, temperature: Sensor;
-    presence = new Sensor(SensorType.Presence);
-    luminosity = new Sensor(SensorType.Luminosity);
-    temperature = new Sensor(SensorType.Temperature);
-    humidity = new Sensor(SensorType.Humidity);
+    presence = new Sensor(SensorType.presence);
+    luminosity = new Sensor(SensorType.luminosity);
+    temperature = new Sensor(SensorType.temperature);
+    humidity = new Sensor(SensorType.humidity);
     const rooms: Room[] = [];
     let kitchen, bedroom: RoomType;
-    kitchen = new RoomType(RoomTypeEnum.Kitchen, 'cookie-bite');
-    bedroom = new RoomType(RoomTypeEnum.Bedroom, 'bed');
+    kitchen = new RoomType(RoomTypeEnum.kitchen, 'cookie-bite');
+    bedroom = new RoomType(RoomTypeEnum.bedroom, 'bed');
     rooms.push(new Room('Cozinha', kitchen, [presence, humidity, temperature]));
     rooms.push(new Room('Quarto do Pedro', bedroom, [luminosity, presence, temperature, humidity]));
-    this.residence = new Residence('Apartamento Pedro', 'pedro_apt', ResidenceType.Apartment, rooms);
+    this.residence = new Residence('Apartamento Pedro', 'pedro_apt', ResidenceType.apartment, rooms);
   }
 
   ngOnInit() {

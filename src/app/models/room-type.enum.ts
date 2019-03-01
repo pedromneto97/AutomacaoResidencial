@@ -1,12 +1,12 @@
 export enum RoomTypeEnum {
-  Kitchen = 'Kitchen',
-  Bedroom = 'Bedroom',
-  Hall = 'Hall',
-  Living_Room = 'Living Room',
-  Dining_Room = 'Dining Room',
-  Office = 'Office',
-  Toilet = 'Toilet',
-  Bathroom = 'Bathroom',
-  Garage = 'Garage',
-  Basement = 'Basement'
+  kitchen = 'Kitchen',
+  bedroom = 'Bedroom',
+  hall = 'Hall',
+  living_room = 'Living Room',
+  dining_room = 'Dining Room',
+  office = 'Office',
+  toilet = 'Toilet',
+  bathroom = 'Bathroom',
+  garage = 'Garage',
+  basement = 'Basement'
 }

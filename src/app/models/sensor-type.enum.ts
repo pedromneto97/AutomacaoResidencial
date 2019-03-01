@@ -1,6 +1,6 @@
 export enum SensorType {
-  Temperature = 'Temperature',
-  Humidity = 'Humidity',
-  Luminosity = 'Luminosity',
-  Presence = 'Presence'
+  temperature = 'Temperature',
+  humidity = 'Humidity',
+  luminosity = 'Luminosity',
+  presence = 'Presence'
 }
