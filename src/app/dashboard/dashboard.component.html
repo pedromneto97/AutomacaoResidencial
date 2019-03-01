@@ -8,34 +8,12 @@
           Home
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="bedroom" routerLinkActive="active">
-          <fa-icon icon="bed"></fa-icon>
-          Bedroom
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <fa-icon icon="cookie-bite"></fa-icon>
-          Kitchen
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="users"></span>
-          Customers
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="bar-chart-2"></span>
-          Reports
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <span data-feather="layers"></span>
-          Integrations
+      <li *ngFor="let room of residence.rooms" class="nav-item">
+        <a class="nav-link" placement="bottom" routerLink="room/{{room.type.name | lowercase}}"
+           routerLinkActive="active"
+           tooltip="Room name: {{room.name}}">
+          <fa-icon icon="{{room.type.icon}}"></fa-icon>
+          {{room.name}}
         </a>
       </li>
     </ul>
