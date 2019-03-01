@@ -1,4 +1,4 @@
-export enum RoomType {
+export enum RoomTypeEnum {
   Kitchen = 'Kitchen',
   Bedroom = 'Bedroom',
   Hall = 'Hall',
