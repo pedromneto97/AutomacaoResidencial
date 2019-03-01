@@ -17,11 +17,17 @@ import {HumidityComponent} from './modulos/humidity/humidity.component';
 import {PresencaComponent} from './modulos/presenca/presenca.component';
 import {DoorComponent} from './modulos/door/door.component';
 import {CrossbarService} from './services/crossbar.service';
+import {TooltipModule} from 'ngx-bootstrap';
+import {RoomComponent} from './room/room.component';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path: 'room',
+    component: RoomComponent
   },
   {
     path: 'bedroom',
@@ -42,11 +48,13 @@ const appRoutes: Routes = [
     HumidityComponent,
     PresencaComponent,
     DoorComponent,
+    RoomComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FontAwesomeModule,
+    TooltipModule.forRoot(),
   ],
   providers: [CrossbarService],
   bootstrap: [AppComponent]
