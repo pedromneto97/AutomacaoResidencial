@@ -1,9 +1,16 @@
 export class User {
-  constructor(name: string, cpf: string, username: string, password: string) {
+  constructor(name: string, cpf: string, username: string, password: string, email: string) {
     this._name = name;
     this._cpf = cpf;
     this._username = username;
     this._password = password;
+    this._email = email;
+  }
+
+  private _email: string;
+
+  get email(): string {
+    return this._email;
   }
 
   private _name: string;
