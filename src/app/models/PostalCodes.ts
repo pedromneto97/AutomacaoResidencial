@@ -1,4 +1,4 @@
-export class Address {
+export class PostalCodes {
   constructor(postal_code: string, province: string, country: string) {
     this._postal_code = postal_code;
     this._province = province;
