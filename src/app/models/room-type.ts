@@ -1,20 +1,17 @@
-import {RoomTypeEnum} from './room-type.enum';
-
 export class RoomType {
-  constructor(name: RoomTypeEnum, icon: string) {
+  constructor(name: string) {
     this._name = name;
-    this._icon = icon;
   }
 
-  private _name: RoomTypeEnum;
+  private _id: string;
 
-  get name(): RoomTypeEnum {
+  get id(): string {
+    return this._id;
+  }
+
+  private _name: string;
+
+  get name(): string {
     return this._name;
-  }
-
-  private _icon: string;
-
-  get icon(): string {
-    return this._icon;
   }
 }
