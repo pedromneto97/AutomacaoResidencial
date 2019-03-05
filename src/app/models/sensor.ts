@@ -1,11 +1,18 @@
 import {SensorType} from './SensorType';
 
 export class Sensor {
-  constructor(id: string, type: SensorType, patter: number, name: string) {
+  constructor(id: string, type: SensorType, patter: number, name: string, icon: string) {
     this._id = id;
     this._type = type;
     this._patter = patter;
     this._name = name;
+    this._icon = icon;
+  }
+
+  private _icon: string;
+
+  get icon(): string {
+    return this._icon;
   }
 
   private _type: SensorType;
