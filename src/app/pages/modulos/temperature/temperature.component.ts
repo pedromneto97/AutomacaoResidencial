@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Temperature} from '../../models/temperature';
+import {Temperature} from '../../../models/temperature';
 import {faTemperatureHigh, faTemperatureLow, faThermometerEmpty} from '@fortawesome/free-solid-svg-icons';
 
 @Component({

@@ -1,0 +1,171 @@
+// user
+{
+{
+  user_id: jkl1,
+  name: "Jao do caminhao",
+  username: "jaozin",
+  password: rsa-232(
+  "692411"
+  ),
+  nivel: 1
+}
+}
+
+// addresses
+{
+{
+address_id: ljk1,
+postal_code: 89295-000,
+province: "Santa Catarina",
+country: "BRAZA"
+},
+{
+
+address_id: ljk2,
+postal_code: 84010-350,
+province:"Paran�",
+country: "BRAZA"
+},
+}
+
+// residence_type
+{
+{
+enum_id: 1,
+tipo: "Casa"
+},
+{
+enum_id: 2,
+tipo: "Apartamento"
+},
+{
+enum_id: 3,
+tipo: "Loja"
+},
+}
+
+// residence
+{
+{
+user_id: [jkl1],
+address: {
+address_id: ljk1,
+district:"Vila Nova",
+street: "R. Bar�o do Rio Branco",
+number: 119,
+complement: "casa"
+},
+rooms:[asd1, asd2, asd3],
+residence_type: 1
+},
+{
+user_id: [jkl1],
+address: {
+address_id: ljk2,
+district:"Centro",
+street: "R. Sete de Setembro",
+number: 335,
+complement: "AP 32"
+},
+rooms:[fgh1, fgh2, fgh3]
+}
+}
+
+// room_type
+{
+{
+enum_id: 1,
+type:"Cozinha"
+},
+{
+enum_id: 2,
+type:"Quarto"
+}
+}
+
+
+// room
+{
+{
+id: asd4fdas6fg4as;
+name: "sala de estar",
+residence: ewoprfasd,
+sensors:[
+sd4,
+asfdas463,
+asfagmk6354,
+],
+room_type: 2
+}
+}
+
+// sensores_sala
+{
+{
+sensor_id:sd4,
+enum_id: 1,
+sensor_pattern: 1,
+name: "temperatura frigobar"
+},
+{
+sensor_id: sd5,
+enum_id: 1,
+sensor_pattern: 2,
+name:"temperatura cama"
+}
+}
+
+
+// sensores
+{
+{
+enum_id: 1,
+type: "Temperatura",
+patterns:
+[
+{unidade: '�C', nome: 'DHT11'},
+{unidade: '�C', nome: 'DHT22'},
+{unidade: '�C', nome: 'LM35'}
+],
+}, {
+enum_id: 2,
+type:"Umidade",
+patterns:
+[
+{unidade: '%', nome: 'DHT11'},
+{unidade: '%', nome: 'DHT22'}
+],
+},
+}
+
+
+// medidas
+{
+{
+valor: 35.5,
+sensor_id: sd4,
+timestamp: timestamp_insert
+},
+{
+valor: 35.5,
+sensor_id: sd4,
+timestamp:timestamp_insert
+},
+{
+valor: 35.5,
+sensor_id:sd4,
+timestamp: timestamp_insert
+},
+{
+valor:35.5,
+sensor_id: sd4,
+timestamp: timestamp_insert
+},
+{
+valor: 35.5,
+sensor_id: sd4,
+timestamp: timestamp_insert
+},
+}
+
+
